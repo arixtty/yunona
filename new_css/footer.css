@@ -1,0 +1,217 @@
+@charset "UTF-8";
+.phone {
+  white-space: nowrap;
+}
+.phone__icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 12px;
+}
+.phone--accent {
+  font-weight: bold;
+  font-size: 16px;
+  color: #3dbe9f;
+}
+
+.btn {
+  height: 44px;
+  padding: 11px 32px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.btn--accent {
+  color: #fff;
+  background: #3cbd9e;
+  border: 1px solid #3cbd9e;
+  width: 23%;
+}
+.btn--secondary {
+  color: #f38db7;
+  border: 1px solid #f38db7;
+  width: 20%;
+}
+
+.header {
+  background: url(../img/branch.png) left no-repeat;
+  padding: 15px 0;
+}
+.header .grid-container {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  min-width: 182px;
+}
+.header__logo-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.header__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__contacts {
+  flex: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__social {
+  min-width: 128px;
+}
+.header__social-icon {
+  height: 24px;
+  width: 24px;
+}
+.header__btn:first-of-type {
+  margin-left: 28px;
+  margin-right: 16px;
+}
+.header__search {
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: flex;
+}
+.header__search-input {
+  height: 36px;
+  margin: 0 -8px 0;
+  padding: 10px 14px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+}
+.header__nav {
+  height: auto;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  flex: 0 1 60%;
+  justify-content: space-between;
+}
+.header__nav li {
+  list-style: none;
+  font-size: 14px;
+}
+
+.btn--dark {
+  background-color: #07a788;
+  color: #fff;
+  font-weight: 700;
+}
+
+.footer {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background-color: linear-gradient(92.24deg, #0abeae 4.59%, #04cb9c 91.19%);
+}
+.footer__container {
+  display: flex;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.footer__container > * {
+  flex: 0 1 20%;
+}
+.footer__container.footer__copy > * {
+  flex: 0 1 auto;
+}
+.footer .flex-grid-col {
+  margin-left: 3%;
+}
+.footer .flex-grid-col:first-child {
+  margin-left: 0;
+}
+.footer__menu.flex-grid-col {
+  display: initial;
+  margin-left: 3%;
+  flex: 0 1 15%;
+}
+.footer__menu:first-child {
+  margin-left: 2%;
+}
+.footer__logo-col {
+  flex-basis: 15%;
+}
+.footer__logo-col img {
+  margin-bottom: 48px;
+}
+.footer__subscribe-input {
+  background-color: rgba(255, 255, 255, 0.24);
+  color: #fff;
+  padding: 12px 18px;
+}
+.footer__subscribe-input::placeholder {
+  font: inherit;
+  font-size: 14px;
+  color: #fff;
+}
+.footer__link {
+  display: block;
+  margin-bottom: 16px;
+}
+.footer__link[title=Услуги] {
+  text-transform: uppercase;
+}
+.footer__link--secondary {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.footer__link--offset {
+  margin-top: 37px;
+}
+.footer .phone {
+  font-weight: 700;
+  white-space: initial;
+}
+.footer__contact {
+  flex-basis: 25%;
+}
+.footer__contact img {
+  margin-right: 5px;
+}
+.footer__contact.flex-grid-col {
+  margin-left: calc(3% / 2);
+}
+.footer__contact.flex-grid-col > * {
+  margin-bottom: 15px;
+}
+.footer address, .footer__mail {
+  font-style: initial;
+  font-weight: 400;
+  font-size: 14px;
+  display: block;
+}
+.footer .btn {
+  width: 100%;
+  padding: auto;
+}
+.footer .btn--accent {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+}
+.footer .btn--secondary {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+.footer__copy {
+  justify-content: space-between;
+  background: none;
+}
+.footer__copy-text, .footer__copy-text a {
+  font: inherit;
+  font-size: 12px;
+  color: #fff;
+}
+.footer__bottomline {
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  background-color: #3CBD9E;
+  padding: 14px 0;
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=footer.css.map */
