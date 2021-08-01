@@ -1,0 +1,24 @@
+$minColWidth: 20rem;
+$gridGap: 2rem;
+$gridMaxWidth: 80rem;
+
+// FLEX GRID
+
+.flex-grid-wrap {
+  padding: $gridGap;
+}
+
+.flex-grid {
+  display: flex;
+
+  &--responsive {
+    flex-wrap: wrap;
+    margin: calc(-#{$gridGap} / 2);
+  }
+}
+
+.flex-col {
+  flex: 0 1 100%;
+}
+
+// FLEX GRID END

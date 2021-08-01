@@ -1,0 +1,433 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap");
+
+.flex-grid-wrap {
+  padding: 2rem;
+}
+
+.flex-grid {
+  display: flex;
+}
+.flex-grid--responsive {
+  flex-wrap: wrap;
+  margin: calc(-2rem / 2);
+}
+
+.flex-col {
+  flex: 0 1 100%;
+}
+
+.btn {
+  height: 44px;
+  padding: 11px 32px;
+  border-radius: 5px;
+  font-weight: 700;
+  text-transform: initial;
+}
+.btn--accent {
+  color: #fff;
+  background: #3cbd9e;
+  border: 1px solid #3cbd9e;
+  width: 23%;
+}
+.btn--secondary {
+  color: #f38db7;
+  border: 1px solid #f38db7;
+  width: 20%;
+}
+.btn--dark {
+  background-color: #07a788;
+  color: #fff;
+  font-weight: 700;
+}
+
+.phone {
+  white-space: nowrap;
+}
+.phone__icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 12px;
+}
+.phone--accent {
+  font-weight: bold;
+  font-size: 16px;
+  color: #3dbe9f;
+}
+
+/* НОВЫЙ ХЕДЕР */
+.header {
+  background: url(../img/branch.png) left no-repeat;
+  padding: 15px 0;
+}
+.header .grid-container {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  min-width: 182px;
+}
+.header__logo-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.header__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__contacts {
+  flex: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__social {
+  min-width: 128px;
+}
+.header__social-icon {
+  height: 24px;
+  width: 24px;
+}
+.header__btn:first-of-type {
+  margin-left: 28px;
+  margin-right: 16px;
+}
+.header__search {
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: flex;
+}
+.header__search-input {
+  height: 36px;
+  margin: 0 -8px 0;
+  padding: 10px 14px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+}
+.header__nav {
+  height: auto;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  flex: 0 1 60%;
+  justify-content: space-between;
+}
+.header__nav li {
+  list-style: none;
+  font-size: 14px;
+}
+
+/* НОВЫЙ ХЕДЕР КОНЕЦ */
+/* НОВЫЕ БАННЕРЫ */
+.main-slider {
+  font-family: "Open Sans", sans-serif;
+}
+.main-slider__slide {
+  background-size: cover;
+  max-height: 480px;
+  padding: 60px 0 60px 60px;
+  margin: 0;
+  min-height: initial;
+  background-position: initial;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.main-slider__slide::after {
+  background-image: none;
+}
+.main-slider__title {
+  max-width: 60%;
+  font-size: 36px;
+  line-height: 1.1;
+  font-weight: 700;
+  text-transform: none;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.main-slider__title span {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.main-slider__title span.main-slider__title--tech {
+  font-weight: 700;
+}
+.main-slider__text {
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 45%;
+}
+.main-slider__text--strong {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.main-slider__list-title {
+  color: #000;
+}
+.main-slider__doctors {
+  display: flex;
+  max-width: 90%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.main-slider__doctors-col {
+  max-width: 50%;
+}
+.main-slider__doctor {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.main-slider__doctor figure {
+  border-radius: 50%;
+  height: 52px;
+  width: 52px;
+  min-width: 52px;
+  min-height: 52px;
+  overflow: hidden;
+  margin-right: 12px;
+}
+.main-slider__doctor figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.main-slider__doctor a {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+}
+.main-slider__doctor a:link, .main-slider__doctor a:hover, .main-slider__doctor a:visited {
+  color: #000;
+}
+
+/* НОВЫЕ БАННЕРЫ КОНЕЦ */
+/* НОВЫЙ ФУТЕР */
+.footer {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background-color: linear-gradient(92.24deg, #0abeae 4.59%, #04cb9c 91.19%);
+}
+.footer__container {
+  display: flex;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.footer__container > * {
+  flex: 0 1 20%;
+}
+.footer__container.footer__copy > * {
+  flex: 0 1 auto;
+}
+.footer .flex-grid-col {
+  margin-left: 3%;
+}
+.footer .flex-grid-col:first-child {
+  margin-left: 0;
+}
+.footer__menu.flex-grid-col {
+  display: initial;
+  margin-left: 3%;
+  flex: 0 1 15%;
+}
+.footer__menu:first-child {
+  margin-left: 2%;
+}
+.footer__logo-col {
+  flex-basis: 15%;
+}
+.footer__logo-col img {
+  margin-bottom: 48px;
+}
+.footer__subscribe-input {
+  background-color: rgba(255, 255, 255, 0.24);
+  color: #fff;
+  padding: 12px 18px;
+}
+.footer__subscribe-input::placeholder {
+  font: inherit;
+  font-size: 14px;
+  color: #fff;
+}
+.footer__link {
+  display: block;
+  margin-bottom: 16px;
+}
+.footer__link[title=Услуги] {
+  text-transform: uppercase;
+}
+.footer__link--secondary {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.footer__link--offset {
+  margin-top: 37px;
+}
+.footer .phone {
+  font-weight: 700;
+  white-space: initial;
+}
+.footer__contact {
+  flex-basis: 25%;
+}
+.footer__contact img {
+  margin-right: 5px;
+}
+.footer__contact.flex-grid-col {
+  margin-left: calc(3% / 2);
+}
+.footer__contact.flex-grid-col > * {
+  margin-bottom: 15px;
+}
+.footer address, .footer__mail {
+  font-style: initial;
+  font-weight: 400;
+  font-size: 14px;
+  display: block;
+}
+.footer .btn {
+  width: 100%;
+  padding: auto;
+}
+.footer .btn--accent {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+}
+.footer .btn--secondary {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+.footer__copy {
+  justify-content: space-between;
+  background: none;
+}
+.footer__copy-text, .footer__copy-text a {
+  font: inherit;
+  font-size: 12px;
+  color: #fff;
+}
+.footer__bottomline {
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  background-color: #3CBD9E;
+  padding: 14px 0;
+  margin-bottom: 0;
+}
+
+/* НОВЫЙ ФУТЕР КОНЕЦ */
+.container {
+  max-width: 1280px;
+}
+
+.articles {
+  padding: 0 15px;
+  font-family: "Open Sans", sans-serif;
+}
+.articles__card {
+  min-height: 480px;
+  max-width: 400px;
+  min-width: 300px;
+  flex: 0 1 calc(100% / 3 - 2rem);
+  margin: calc(2rem / 2);
+  background-color: #f5f5f5;
+}
+@media (max-width: 768px) {
+  .articles__card {
+    margin: calc(2rem / 2) auto;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 22px 18px auto 25px;
+}
+.card a {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 28px;
+  border-top: 1px solid #e2e2e2;
+}
+.card a span:first-of-type {
+  color: #07A788;
+}
+.card a span:last-of-type {
+  color: #949494;
+}
+.card__img {
+  height: 55%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.pagination__block {
+  height: 1.875rem;
+  width: 30%;
+  justify-content: center;
+  margin: 0 auto 9.75rem;
+}
+.pagination__block > .flex-col:not(.btn) {
+  margin-left: 0.5rem;
+}
+.pagination__dot {
+  height: 1.875rem;
+  min-width: 1.875rem;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5;
+}
+.pagination__dot--active {
+  background-color: #f38db7;
+  color: #fff;
+}
+.pagination__ellipsis {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.pagination__btn {
+  padding: 0.3125rem 1rem;
+  width: 5.5rem;
+  height: 1.8125rem;
+  background: #ffffff;
+  color: #949494;
+  border: 0.0625rem solid #e6e6e6;
+  opacity: 0.88;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+}
+.pagination__btn:first-of-type {
+  margin-right: 24px;
+}
+.pagination__btn:last-of-type {
+  margin-left: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
