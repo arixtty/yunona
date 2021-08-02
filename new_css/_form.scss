@@ -1,0 +1,103 @@
+/* НОВАЯ ФОРМА */
+
+.form-container {
+  border: 0.0625rem solid #e2e2e2;
+  border-top: 0.1875rem solid #f38db7;
+  padding: 2rem 8rem 3.375rem;
+  background-image: url(/img/branch.png), url(/img/branch-rotated.png);
+  background-position: left top, right top;
+  background-repeat: no-repeat;
+
+  h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.0625rem;
+    margin-bottom: 3.125rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3dbe9f;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.form-main {
+  position: static;
+  width: 100%;
+  max-width: initial;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.125rem;
+
+  & > *::placeholder {
+    font-size: 0.875rem;
+    color: #949494;
+  }
+
+  textarea {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+  }
+
+  .btn--accent {
+    justify-self: end;
+    width: initial;
+    max-width: 57%;
+  }
+
+  .checkbox {
+    display: grid;
+    align-items: center;
+    grid-template-columns: min-content auto;
+    grid-gap: 0.625rem;
+    font-size: 0.875rem;
+    height: 100%;
+    width: 100%;
+  }
+
+  .checkbox__control--checked {
+    transform: translateY(0.5rem);
+    svg {
+      display: none;
+    }
+  }
+
+  .checkbox__control--unchecked {
+    transform: translateY(0.5rem);
+    svg {
+      display: block;
+    }
+  }
+
+  .checkbox__input {
+    display: grid;
+    grid-template-areas: "checkbox";
+
+    > * {
+      grid-area: checkbox;
+    }
+
+    input {
+      opacity: 0;
+      width: 1em;
+      height: 1em;
+
+      &:checked + .checkbox__control--unchecked svg {
+        display: none;
+      }
+
+      &:checked + .checkbox__control--unchecked + .checkbox__control--checked svg {
+        display: block;
+      }
+    }
+  }
+}
+
+/* НОВАЯ ФОРМА КОНЕЦ */

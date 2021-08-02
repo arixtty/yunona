@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap");
-
 .flex-grid-wrap {
   padding: 2rem;
 }
@@ -122,6 +121,86 @@
 }
 
 /* НОВЫЙ ХЕДЕР КОНЕЦ */
+.third-level-menu {
+  position: absolute;
+  top: 0;
+  right: -220px;
+  width: 220px;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  display: none;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+}
+
+.third-level-menu > li {
+  background: #fff;
+}
+
+.third-level-menu > li:hover {
+  background: #fff;
+}
+
+.second-level-menu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 220px;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  display: none;
+  z-index: 999;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+}
+
+.second-level-menu > li {
+  position: relative;
+  color: #000;
+}
+
+.second-level-menu > li:hover {
+  background: #fff;
+}
+
+.top-level-menu {
+  list-style: none;
+  margin: 0;
+}
+
+.top-level-menu > li {
+  position: relative;
+  float: left;
+  height: 30px;
+  background: #fff;
+}
+
+.top-level-menu > li:hover {
+  background: #fff;
+}
+
+.top-level-menu li:hover > ul {
+  display: inline;
+}
+
+.top-level-menu a {
+  font-family: "Open Sans," sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  padding: 0 0 0 10px;
+  display: block;
+  line-height: 30px;
+}
+
+.top-level-menu a:hover {
+  color: #3cbd9e;
+}
+
 /* НОВЫЕ БАННЕРЫ */
 .main-slider {
   font-family: "Open Sans", sans-serif;
@@ -207,6 +286,95 @@
 }
 
 /* НОВЫЕ БАННЕРЫ КОНЕЦ */
+/* НОВАЯ ФОРМА */
+.form-container {
+  border: 0.0625rem solid #e2e2e2;
+  border-top: 0.1875rem solid #f38db7;
+  padding: 2rem 8rem 3.375rem;
+  background-image: url(/img/branch.png), url(/img/branch-rotated.png);
+  background-position: left top, right top;
+  background-repeat: no-repeat;
+}
+.form-container h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.0625rem;
+  margin-bottom: 3.125rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3dbe9f;
+}
+.form-container h2::after {
+  display: none;
+}
+
+.form-main {
+  position: static;
+  width: 100%;
+  max-width: initial;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.125rem;
+}
+.form-main > *::placeholder {
+  font-size: 0.875rem;
+  color: #949494;
+}
+.form-main textarea {
+  grid-column: 2;
+  grid-row: 1/span 3;
+}
+.form-main .btn--accent {
+  justify-self: end;
+  width: initial;
+  max-width: 57%;
+}
+.form-main .checkbox {
+  display: grid;
+  align-items: center;
+  grid-template-columns: min-content auto;
+  grid-gap: 0.625rem;
+  font-size: 0.875rem;
+  height: 100%;
+  width: 100%;
+}
+.form-main .checkbox__control--checked {
+  transform: translateY(0.5rem);
+}
+.form-main .checkbox__control--checked svg {
+  display: none;
+}
+.form-main .checkbox__control--unchecked {
+  transform: translateY(0.5rem);
+}
+.form-main .checkbox__control--unchecked svg {
+  display: block;
+}
+.form-main .checkbox__input {
+  display: grid;
+  grid-template-areas: "checkbox";
+}
+.form-main .checkbox__input > * {
+  grid-area: checkbox;
+}
+.form-main .checkbox__input input {
+  opacity: 0;
+  width: 1em;
+  height: 1em;
+}
+.form-main .checkbox__input input:checked + .checkbox__control--unchecked svg {
+  display: none;
+}
+.form-main .checkbox__input input:checked + .checkbox__control--unchecked + .checkbox__control--checked svg {
+  display: block;
+}
+
+/* НОВАЯ ФОРМА КОНЕЦ */
 /* НОВЫЙ ФУТЕР */
 .footer {
   font-family: "Open Sans", sans-serif;
@@ -368,7 +536,7 @@
   border-top: 1px solid #e2e2e2;
 }
 .card a span:first-of-type {
-  color: #07A788;
+  color: #07a788;
 }
 .card a span:last-of-type {
   color: #949494;
