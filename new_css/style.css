@@ -40,6 +40,9 @@
   color: #fff;
   font-weight: 700;
 }
+.btn--cta {
+  background: #F38DB7;
+}
 
 .phone {
   white-space: nowrap;
@@ -873,6 +876,7 @@
 }
 
 /* НОВАЯ СТРАНИЦА ВРАЧА КОНЕЦ*/
+/* НОВЫЕ ОТЗЫВЫ */
 /* Указано для разработки, удалить */
 .reviews .review {
   opacity: 1;
@@ -924,6 +928,8 @@
   color: #949494;
 }
 
+/* НОВЫЕ ОТЗЫВЫ КОНЕЦ */
+/* НОВАЯ СТРАНИЦА 404 */
 body {
   display: flex;
   flex-direction: column;
@@ -932,8 +938,6 @@ body {
 
 main {
   flex: 1;
-  display: grid;
-  justify-content: center;
 }
 
 .notfound {
@@ -984,6 +988,19 @@ main {
 }
 .notfound a:last-of-type {
   color: #3CBD9E;
+}
+
+/* НОВАЯ СТРАНИЦА 404 КОНЕЦ */
+.about figure {
+  float: left;
+  margin-right: 35px;
+  max-width: 50%;
+}
+.about figure img {
+  margin-bottom: 10px;
+}
+.about figure .btn--cta {
+  height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
