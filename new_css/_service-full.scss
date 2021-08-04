@@ -1,18 +1,19 @@
 .about {
   figure {
     float: left;
-    margin-right: 35px;
+    margin: 0 36px 36px 0;
     max-width: 50%;
 
     img {
       margin-bottom: 10px;
     }
-    
+
     .btn--cta {
       height: 50px;
     }
   }
 
-
-
+  p {
+    color: #000;
+  }
 }

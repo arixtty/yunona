@@ -43,6 +43,9 @@
 .btn--cta {
   background: #F38DB7;
 }
+.btn--cta:hover {
+  color: #fff;
+}
 
 .phone {
   white-space: nowrap;
@@ -89,6 +92,38 @@
 .tabs .tabpanel {
   grid-column: 1;
   grid-row: 2;
+}
+
+/* Таблица с ценами */
+.prices {
+  clear: both;
+  padding: 34px;
+  margin: 36px auto;
+  border: 1px solid #e4e4e4;
+}
+.prices h2 {
+  text-transform: uppercase;
+}
+.prices h2::after {
+  display: none;
+}
+.prices__item {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+  padding: 22px 28px;
+  background-color: #e6fbf5;
+}
+.prices__item:nth-of-type(even) {
+  background-color: #fff;
+}
+.prices__service {
+  color: #000;
+  padding-right: 24px;
+}
+.prices__price {
+  font-size: 24px;
+  color: #3dbe9f;
 }
 
 /* НОВЫЙ ХЕДЕР */
@@ -993,7 +1028,7 @@ main {
 /* НОВАЯ СТРАНИЦА 404 КОНЕЦ */
 .about figure {
   float: left;
-  margin-right: 35px;
+  margin: 0 36px 36px 0;
   max-width: 50%;
 }
 .about figure img {
@@ -1001,6 +1036,9 @@ main {
 }
 .about figure .btn--cta {
   height: 50px;
+}
+.about p {
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
