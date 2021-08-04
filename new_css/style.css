@@ -1045,6 +1045,10 @@ main {
 }
 
 /* НОВАЯ СТРАНИЦА 404 КОНЕЦ */
+.about h1 {
+  color: #3DBE9F;
+  text-align: left;
+}
 .about figure {
   float: left;
   margin: 0 36px 36px 0;
