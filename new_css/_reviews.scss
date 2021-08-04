@@ -1,0 +1,57 @@
+/* Указано для разработки, удалить */
+.reviews .review {
+  opacity: 1;
+}
+/* Удалить досюда */
+
+.review {
+  box-shadow: 0px 0px 31px rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+
+  &__bar {
+    justify-content: flex-end;
+    transform: translateY(-115%);
+
+    a.goto {
+      color: #3cbd9e;
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__arrows {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: start;
+    grid-gap: 0 14px;
+  }
+
+  &__img {
+    grid-row: span 2;
+  }
+
+  &__from {
+    align-self: center;
+    margin-bottom: -3px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    color: #000;
+  }
+
+  &__date.show-for-medium {
+    grid-column: 2;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #949494;
+  }
+}

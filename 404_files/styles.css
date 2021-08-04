@@ -1,0 +1,17 @@
+ul.default li {
+	list-style-type: none;
+}
+
+ul.default li:before {
+	content: '•';
+	font-size: 30px;
+	color: #74ce9c;
+	padding-right: 5px;
+	vertical-align: middle;
+}
+
+@media only screen and (min-width: 641px) {
+    .slider .item {
+        height: 600px;
+    }
+}

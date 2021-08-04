@@ -65,14 +65,25 @@
   &__nav {
     height: auto;
     margin-left: 25px;
-    display: flex;
-    align-items: center;
     flex: 0 1 60%;
-    justify-content: space-between;
-
-    li {
-      list-style: none;
-      font-size: 14px;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      text-transform: initial;
+      margin: 0;
+      li {
+        list-style: none;
+        font-size: 14px;
+  
+        a {
+          font-family: "Open Sans", sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          color: #000;
+        }
+      }
     }
   }
 }
@@ -142,7 +153,7 @@
 }
 
 .top-level-menu a {
-  font-family: "Open Sans," sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #000;
@@ -154,3 +165,5 @@
 .top-level-menu a:hover {
   color: #3cbd9e;
 }
+
+/* СТАРОЕ МЕНЮ */
