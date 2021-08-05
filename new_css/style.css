@@ -505,13 +505,16 @@ h1.heading--underlined::after {
 }
 
 .cards {
-  padding: 0 15px;
+  padding: 15px;
   font-family: "Open Sans", sans-serif;
+}
+.cards .flex-grid {
+  justify-content: center;
 }
 .cards__card {
   min-height: 480px;
   max-width: 400px;
-  min-width: 300px;
+  min-width: 350px;
   flex: 0 1 calc(100% / 3 - 2rem);
   margin: calc(2rem / 2);
   background-color: #f5f5f5;
@@ -1175,6 +1178,11 @@ main {
     z-index: 2;
   }
 }
+@media only screen and (min-width: 769px) {
+  .footer__container--mobile, .footer__copy--mobile, .footer__bottomline--mobile {
+    display: none;
+  }
+}
 @media only screen and (max-width: 768px) {
   .form-container {
     padding: 36px 26px;
@@ -1188,12 +1196,70 @@ main {
     max-width: 100%;
     padding: 0;
   }
-  .form-container .form-main input, .form-container .form-main textarea {
+  .form-container .form-main input,
+.form-container .form-main textarea {
     margin: 0;
   }
   .form-container .form-main textarea {
     grid-column: auto;
     grid-row: auto;
+  }
+
+  .footer {
+    padding: 32px 8px 0 8px;
+  }
+  .footer__container, .footer__copy, .footer__bottomline {
+    display: none;
+  }
+  .footer__container--mobile img {
+    display: block;
+    margin: 0 auto 40px;
+  }
+  .footer__container--mobile form {
+    display: flex;
+  }
+  .footer__container--mobile form > * {
+    flex: 1;
+  }
+  .footer__container--mobile input {
+    height: 44px;
+  }
+  .footer__container--mobile button {
+    margin-left: -40px;
+  }
+  .footer__container--mobile ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+  }
+  .footer__container--mobile ul li {
+    flex: 1 1 50%;
+  }
+  .footer__container--mobile ul li a {
+    font-weight: 700;
+  }
+  .footer__container--mobile .btn {
+    width: 83%;
+    margin: 0 auto 20px auto;
+  }
+  .footer__copy--mobile {
+    margin-top: 14px;
+    padding: 18px;
+    border-top: 1px solid #07a788;
+    font-size: 12px;
+    text-align: center;
+  }
+  .footer__copy-text {
+    margin-bottom: 20px;
+  }
+  .footer__bottomline--mobile {
+    background: #3cbd9e;
+    text-align: center;
+    padding: 22px 24px;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 600;
   }
 }
 @media print, screen and (max-width: 39.99875em) {
