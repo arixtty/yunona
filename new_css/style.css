@@ -1162,21 +1162,39 @@ main {
     font-weight: 700;
   }
 
-  .main-services--mobile .cell {
-    width: auto;
-    flex: 1 1 100%;
+  .main-services {
+    margin-top: 12px;
   }
-  .main-services--mobile .cell .service {
-    flex-direction: row;
-    padding-bottom: 0px;
-    padding-top: 8px;
+  .main-services ul {
+    text-decoration: none;
+    margin: 0;
   }
-  .main-services--mobile .cell .service svg {
-    margin-right: 20px;
-  }
-  .main-services--mobile .cell .service div {
+  .main-services li {
+    display: flex;
+    align-items: center;
+    font-family: Open Sans;
     font-size: 14px;
     font-weight: 700;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    height: 60px;
+    padding: 9px;
+  }
+  .main-services li:not(:last-of-type) {
+    margin-bottom: 8px;
+  }
+  .main-services li:nth-of-type(1), .main-services li:nth-of-type(4) {
+    color: #8590EA;
+  }
+  .main-services li:nth-of-type(2), .main-services li:nth-of-type(5) {
+    color: #F38DB7;
+  }
+  .main-services li:nth-of-type(3) {
+    color: #3DBE9F;
+  }
+  .main-services li svg {
+    max-width: 44px;
+    margin-right: 20px;
   }
 }
 
