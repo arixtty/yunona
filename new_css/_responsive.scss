@@ -187,6 +187,26 @@
       }
     }
   }
+
+  .about {
+    figure {
+      float: none;
+      max-width: 100%;
+      margin: 0 0 36px;
+      img {
+        margin-bottom: 10px;
+        width: 100%;
+        display: block;
+        height: auto;
+      }
+    }
+  }
+  .prices {
+    padding: 18px 20px;
+    &__item {
+      display: block;
+    }
+  }
 }
 
 @media print, screen and (max-width: 39.99875em) {
