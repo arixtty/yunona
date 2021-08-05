@@ -1280,6 +1280,51 @@ main {
   .prices__item {
     display: block;
   }
+
+  .doctor-card__info {
+    grid-template-columns: 1fr;
+  }
+  .doctor-card .doctor-img {
+    grid-column: auto;
+    grid-row: auto;
+    height: 60vw;
+    width: 60vw;
+    justify-self: center;
+  }
+  .doctor-card__social {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .doctor-card__details {
+    grid-template-columns: 1fr;
+  }
+  .doctor-card__details h1 {
+    text-align: center;
+    border-right: none;
+  }
+  .doctor-card__details h2 {
+    text-align: center;
+    padding-left: 0;
+  }
+  .doctor-card a.btn {
+    grid-column: auto;
+    grid-row: auto;
+    width: 80%;
+    margin: 0 auto 10px;
+  }
+  .doctor-card__prices {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .doctor-card__form {
+    grid-template-columns: 1fr;
+  }
+  .doctor-card__form .btn {
+    justify-self: initial;
+    width: 100%;
+    grid-column: auto;
+    grid-row: auto;
+  }
 }
 @media print, screen and (max-width: 39.99875em) {
   .main-slider__slide {
