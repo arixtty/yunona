@@ -3,7 +3,23 @@ $gridGap: 2rem;
   max-width: 1280px;
 }
 
-.articles {
+h1.heading--underlined {
+  text-align: left;
+  position: relative;
+  color: #3DBE9F;
+  &::after {
+    content: "";
+    position: absolute;
+    background: #F38DB7;
+    height: .1875rem;
+    width: 5.5rem;
+    left: 0;
+    right: 0;
+    bottom: -0.7rem;
+  }
+}
+
+.cards {
   padding: 0 15px;
   font-family: "Open Sans", sans-serif;
 

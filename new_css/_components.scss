@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 .btn {
   display: flex;
   justify-content: center;
@@ -54,95 +56,5 @@
   display: flex;
   img:not(:last-child) {
     margin-left: 8px;
-  }
-}
-
-.doctor-img {
-  overflow: hidden;
-  border-radius: 50%;
-
-  & > img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-}
-
-/* Табы */
-
-.tabs {
-  display: grid;
-
-  .tabindex {
-    display: grid;
-    grid-template-columns: repeat(3, min-content);
-    .tabbutton {
-      white-space: nowrap;
-    }
-  }
-  
-  .tabpanel {
-    grid-column: 1;
-    grid-row: 2;
-  }
-}
-
-/* Таблица с ценами */
-
-.prices {
-  clear: both;
-  padding: 34px;
-  margin: 36px auto;
-  border: 1px solid #e4e4e4;
-
-  h2 {
-    text-transform: uppercase;
-
-    &::after {
-      display: none;
-    }
-  }
-
-  &__item {
-    display: grid;
-    grid-template-columns: 1fr max-content;
-    align-items: center;
-    padding: 22px 28px;
-    background-color: #e6fbf5;
-
-    &:nth-of-type(even) {
-      background-color: #fff;
-    }
-  }
-
-  &__service {
-    color: #000;
-    padding-right: 24px;
-  }
-
-  &__price {
-    font-size: 24px;
-    color: #3dbe9f;
-  }
-}
-
-/* Видео */
-
-.section-video {
-  width: 80%;
-  margin: 52px auto;
-
-  .video-player {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    height: 0;
-  
-    iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
   }
 }

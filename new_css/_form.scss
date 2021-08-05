@@ -23,79 +23,109 @@
       display: none;
     }
   }
-}
 
-.form-main {
-  position: static;
-  width: 100%;
-  max-width: initial;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1.125rem;
-
-  & > *::placeholder {
-    font-size: 0.875rem;
-    color: #949494;
-  }
-
-  textarea {
-    grid-column: 2;
-    grid-row: 1 / span 3;
-  }
-
-  .btn--accent {
-    justify-self: end;
-    width: initial;
-    max-width: 57%;
-  }
-
-  .checkbox {
-    display: grid;
-    align-items: center;
-    grid-template-columns: min-content auto;
-    grid-gap: 0.625rem;
-    font-size: 0.875rem;
-    height: 100%;
+  .form-main {
+    position: static;
     width: 100%;
-  }
-
-  .checkbox__control--checked {
-    transform: translateY(0.5rem);
-    svg {
-      display: none;
-    }
-  }
-
-  .checkbox__control--unchecked {
-    transform: translateY(0.5rem);
-    svg {
-      display: block;
-    }
-  }
-
-  .checkbox__input {
+    max-width: initial;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
     display: grid;
-    grid-template-areas: "checkbox";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.125rem;
 
-    > * {
-      grid-area: checkbox;
+    & > *::placeholder {
+      font-size: 0.875rem;
+      color: #949494;
     }
 
-    input {
-      opacity: 0;
-      width: 1em;
-      height: 1em;
+    & > input,
+    & > textarea {
+      border: 1px solid #e3e3e3;
+    }
 
-      &:checked + .checkbox__control--unchecked svg {
+    textarea {
+      grid-column: 2;
+      grid-row: 1 / span 3;
+    }
+
+    .btn--accent {
+      justify-self: end;
+      max-width: 57%;
+    }
+
+    .checkbox-wrap {
+      display: grid;
+      align-items: center;
+      grid-template-columns: min-content auto;
+      grid-gap: 10px;
+      font-size: 14px;
+    }
+
+    .checkbox__label {
+      cursor: pointer;
+    }
+
+    .checkbox__control--checked {
+      svg {
         display: none;
       }
+    }
 
-      &:checked + .checkbox__control--unchecked + .checkbox__control--checked svg {
+    .checkbox__control--unchecked {
+      svg {
         display: block;
       }
+    }
+
+    .checkbox__input {
+      display: grid;
+      grid-template-areas: "checkbox";
+
+      > * {
+        grid-area: checkbox;
+      }
+
+      input {
+        opacity: 0;
+        width: 1em;
+        height: 1em;
+
+        &:checked + .checkbox__control--unchecked svg {
+          display: none;
+        }
+
+        &:checked
+          + .checkbox__control--unchecked
+          + .checkbox__control--checked
+          svg {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &--specialists {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 120px auto;
+
+    .form-main {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    h2 {
+      text-align: left;
+      font-size: 36px;
+      &::after {
+        display: initial;
+      }
+    }
+
+    .btn {
+      width: 35%;
     }
   }
 }
