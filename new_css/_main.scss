@@ -101,3 +101,45 @@
 }
 
 /* НОВЫЕ БАННЕРЫ КОНЕЦ */
+
+/* НОВЫЙ БЛОК СТАТЕЙ */
+
+.article {
+  display: block;
+  position: static;
+  color: #000;
+  max-height: 380px;
+  border-radius: 15px 15px 0px 0px;
+
+  &:hover {
+    .article__img {
+      transform: none;
+    }
+  }
+
+  &__img {
+    position: static;
+    border-radius: 15px 15px 0px 0px;
+    height: 80%;
+    padding-bottom: 62.5%;
+    margin-bottom: -5%;
+    &::after {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__goto {
+    font-weight: bold;
+    font-size: 16px;
+    color: #07a788;
+    text-decoration: none;
+  }
+}
+
+/* КОНЕЦ НОВОГО БЛОКА СТАТЕЙ */
